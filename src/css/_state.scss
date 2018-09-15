@@ -1,0 +1,20 @@
+//.window-content {
+//
+//    &.inactive {
+//        left: 110%;
+//        transition: all 1200ms ease-in-out;
+//        //display: none;
+//    }
+//
+//    &.active {
+//        margin-left: 0;
+//        //transition: all 1200ms ease-in-out;
+//    }
+//}
+
+.inactive{
+   //display: none;
+   position: absolute;
+   margin-left: 110%;
+   //transition: all 1200ms ease-in-out;
+}

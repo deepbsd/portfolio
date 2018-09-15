@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+  crossorigin="anonymous">
+  <title>Dave's Portfolio</title>
+</head>
+<body>
+
+ <div class="y-wrap">
+
+  <div class="home">
+      <div class="logo">
+           <h1>David<br/>Jackson</h1>
+      </div>
+
+      <ul class="pseudonav">
+           <li id="bio">bio</li>
+           <li id="projects">projects</li>
+           <li id="contact">contact</li>
+      </ul>
+  </div>
+
+  
+  <div id="t-bio" class="bio inactive">
+   <h2>Bio</h2>
+
+   <img id="selfie" src="/img/dave_cropped.jpg"  />
+
+   <p>Dave started out in life as a child a very long time ago.  The world was in black and white.</p>
+
+   <p>In 1996 Dave first installed Linux, and he's had a love affair with code ever since.  That was the same 
+   year he published a book with MacMillan, called <cite>Special Edition: Using SGML</cite> with his friend 
+   Martin Colby.  Dave retired from his job as a technical writer not long after, because his wife was making 
+   too darn much money and someone needed to raise their wonderful child, so Dave became a full-time parent for his 
+   daughter.  His wife died from cancer.  Dave and his daughter eventually recovered, and now that Ginny is a grown 
+   adult who has surpassed her dad in maturity, Dave is returning to the workforce doing what he loves, namely, 
+   wrangling code.</p>
+
+  </div>
+
+
+  <div id="t-projects" class="projects inactive">
+	 <h2>Projects</h2>
+  
+	 <div class="project">
+	  <h3>Code Drills</h3>
+      <a href="https://codeDrills.netlify.com">
+         <img class="screenshot" src="/img/codeDrills_cropped.png" />
+      </a>
+	  <p>CodeDrills is a website for web developers to practice answering technical interview
+	  questions.  It uses React.js, Node.js, MongoDB, and the rest of the MERN stack. I needed a way
+	  to practice answering questions and using Chart.js to track my progress visually.  Fun project!</p>
+      <p class="stack">MongoDB, Express.js, React.js, Redux.js, Node.js, Chart.js, Chai.js, Jest, Netlify and Heroku. </p>
+	  <p class="link">(<a href="https://codeDrills.netlify.com">Live App</a> | <a href="https://github.com/deepbsd/codeDrills-client">Repo</a>)</p>
+	 </div>
+  
+	 <div class="project">
+	  <h3>Gun Base</h3>
+      <a href="https://firearmbase.herokuapp.com">
+        <img class="screenshot" src="/img/GunBase_cropped.png" />
+      </a>
+	  <p>Dave acquired a love of shooting from his father on a bolt-action .22 single-shot and also
+	  as a grunt in the Marine Corps. Later in life, Dave became a competitive shooter, and in the
+	  process, acquired too many firearms in order to compete in different divisions of different
+	  sports. Gun Base grew out of the need to have a detailed record of each firearm, containing a
+	  photo, serial number, value, and other such information, for insurance purposes.  Like Code
+	  Drills, the database is MongoDB and is hosted on mLab, and both the front and the back end are
+	  hosted on Heroku.</p>
+      <p class="stack">MongoDB, Express.js, Node.js, jQuery, Chai.js, Jest and Heroku. </p>
+	  <p class="link">(<a href="https://firearmbase.herokuapp.com">Live App</a> | <a href="https://github.com/deepbsd/Gunbase">Repo</a>)</p>
+	 </div>
+
+	 <div class="project">
+	  <h3>Swapi Characters</h3>
+      <a href="https://swapiquiz.herokuapp.com/">
+        <img class="screenshot" src="/img/swapiquizz_screenshot_cropped.png" />
+      </a>
+	  <p>SWAPI stands for Star Wars API, and Dave's first app was a fun quiz app for learning all the
+	  characters in the Star Wars Universe!  This app uses jQuery, Node, Express, Mongo as well as
+	  the Chai testing framework.  Who doesn't love looking at these classic characters and recalling
+	  their timeless intergallactic story!</p>
+      <p class="stack">MongoDB, Express.js, Node.js, jQuery, Chai.js, Jest and Heroku. </p>
+	  <p class="link">(<a href="https://swapiquiz.herokuapp.com/">Live App</a> | <a href="https://github.com/deepbsd/swapiQuiz">Repo</a>)</p>
+	 </div>
+
+  </div>  <!-- End Projects -->
+
+  <div id="t-socials" class="socials inactive">
+
+      <h2>My Socials</h2>
+  
+     <div class="social"><a href="mailto:deepbsd@yahoo.com" title="email dave"><i class="fas fa-at fa-3x"></i></a></div>
+     <div class="social"><a href="https://www.linkedin.com/in/pydave" title="dave's Linked-In"><i class="fab fa-linkedin fa-3x"></i></a></div>
+     <div class="social"><a href="https://github.com/deebsd" title="dave's github"><i class="fab fa-github-square fa-3x"></i></a></div>
+     <div class="social"><a href="https://twitter.com/deepbsd" title="tweet dave"><i class="fab fa-twitter-square fa-3x"></i></a></div>
+     <div class="social"><a href="https://www.flickr.com/photos/deepbsd" title="dave's flickr"><i class="fab fa-flickr fa-3x"></i></a></div>
+     <div class="social"><a href="https://deepbsd.github.io" title="dave's github blog"><i class="fab fa-github-alt fa-3x"></i>blog</a></div>
+     <div class="social"><a href="http://www.davidsjackson.net" title="dave's wordpress blog"><i class="fab fa-wordpress fa-3x"></i>blog</a></div>
+  </div>   <!-- End Socials  -->
+
+
+
+  <div id="terminal" class="termwindow ">
+      <div class="termheader">
+        <div class="button green"></div>
+        <div class="button yellow"></div>
+        <div class="button red"></div>
+      </div>
+	  <div class="terminal">
+		<div class="history"></div>
+		 dave@localhost ]&nbsp;$&nbsp;<span class="prompt"></span> <span class="typed-cursor">|</span>
+      </div>
+  </div>   <!--  End Terminal -->
+
+
+ </div> <!-- y-wrap -->
+
+  
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <!--
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  -->
+  <script src="https://www.mattboldt.com/demos/typed-js/js/typed.custom.js"></script>
+  <script src="/js/main.js" type="text/javascript"></script>
+</body>
+</html>

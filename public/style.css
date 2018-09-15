@@ -1,0 +1,515 @@
+/*----------------------------------------------------------------------------
+  Import Stylesheet Includes
+----------------------------------------------------------------------------*/
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+
+----------------------------------------------------------------------------*/
+/* Let's default this puppy out
+----------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block; }
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+/* force a vertical scrollbar to prevent a jumpy page */
+/*html {overflow-y: scroll;}  /* POTA remove this if deploying to SharePoint. Also remove it if you need to enable smooth scrolling. */
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit; }
+
+a:hover, a:active {
+  text-decoration: none; }
+
+a:visited {
+  color: inherit; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+select, input, textarea {
+  font: 99% sans-serif; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+small {
+  font-size: 85%; }
+
+strong {
+  font-weight: bold; }
+
+td, td img {
+  vertical-align: top; }
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0; }
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible; }
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {
+  text-shadow: none; }
+
+::selection {
+  text-shadow: none; }
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+ins {
+  background-color: #000;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #000;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder {
+  color: #a9a9a9; }
+
+textarea:-moz-placeholder {
+  color: #a9a9a9; }
+
+img {
+  display: block; }
+
+.cf:before, .cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+/*----------------------------------------------------------------------------
+  Animations
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Colors
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Font Families
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Font Sizes
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Font Weights
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Overlays
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Responsive Breakpoints
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Placeholders
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Responsive
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Transformations
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Transitions
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Body
+----------------------------------------------------------------------------*/
+body {
+  overflow-x: hidden; }
+
+/*----------------------------------------------------------------------------
+  Header Styles
+----------------------------------------------------------------------------*/
+h2 {
+  font-size: 26px;
+  color: slategray;
+  margin: 10px auto; }
+
+/*----------------------------------------------------------------------------
+  Headings
+----------------------------------------------------------------------------*/
+h3 {
+  color: slategray;
+  font-size: 26px;
+  font-variant: small-caps;
+  margin: 15px auto; }
+
+/*----------------------------------------------------------------------------
+  HTML
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  FORM ELEMENTS
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Image
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Paragraph
+----------------------------------------------------------------------------*/
+p {
+  font-family: Arial, Sans-serif;
+  font-size: 18px;
+  margin: 30px 20px; }
+
+/* layout styles */
+.y-wrap {
+  margin: 0 auto;
+  width: 90%; }
+
+/*----------------------------------------------------------------------------
+  Base
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Layout
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Modules
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+  Vendor
+----------------------------------------------------------------------------*/
+/* Media Queries */
+/*  Output Styles   */
+.home h1 {
+  color: slategray;
+  font-size: 65px;
+  line-height: 5.5rem;
+  margin-top: 100px;
+  position: relative; }
+  .home h1:after {
+    background: url("/img/MustachePro.png") no-repeat center center;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 80px;
+    width: 120px;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .home h1:hover:after {
+    animation-name: twitch;
+    animation-duration: 1.25s;
+    animation-fill-mode: none;
+    transform-origin: 0 0; }
+
+@keyframes twitch {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%); }
+  20% {
+    transform: rotate(-15deg) translate(-50%, -50%); }
+  40% {
+    transform: rotate(15deg) translate(-50%, -50%); }
+  60% {
+    transform: rotate(-15deg) translate(-50%, -50%); }
+  80% {
+    transform: rotate(15deg) translate(-50%, -50%); }
+  100% {
+    transform: rotate(0deg) translate(-50%, -50%); } }
+
+.logo {
+  text-align: center; }
+
+.pseudonav {
+  color: slategray;
+  font-size: 25px;
+  line-height: 2.5rem;
+  text-align: center; }
+
+.pseudonav li:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: all 0.3s; }
+
+.bio, .projects, .socials {
+  left: 20%;
+  margin-bottom: 100px;
+  margin-top: 170px;
+  padding-right: 8%;
+  position: absolute;
+  top: 35%;
+  transition: all 1200ms ease-in-out; }
+
+.inactive {
+  margin-left: 110%; }
+
+.screenshot {
+  border: solid 2px slategray;
+  box-shadow: 10px 10px 5px gray;
+  height: 60%;
+  margin: 20px 20px;
+  transition: all 0.2s ease-in-out;
+  width: 70%; }
+
+.screenshot:hover {
+  transform: scale(1.1); }
+
+#selfie {
+  border-radius: 45%;
+  height: 150px;
+  margin: 20px 20px;
+  width: 150px; }
+
+#selfie:hover {
+  animation: roll 1.5s; }
+
+@keyframes roll {
+  0% {
+    -webkit-transform: rotate(0deg) translateY(20px);
+    transform: rotate(0deg) translateY(20px); }
+  100% {
+    -webkit-transform: rotate(360deg) translateY(-30px);
+    transform: rotate(360deg) translateY(-30px); } }
+
+.stack {
+  font-size: 18px;
+  font-variant: small-caps; }
+
+.social {
+  color: slategray;
+  display: inline-block;
+  margin: 20px 20px; }
+
+i:hover {
+  animation: float 0.75s; }
+
+@keyframes float {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
+.link {
+  color: #4286f4;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 15px;
+  margin-left: 65%; }
+
+/* This is for the terminal window...  */
+.termwindow {
+  border-radius: 8px;
+  text-align: left;
+  width: 600px;
+  height: 460px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative; }
+
+.termheader {
+  background: #E0E8F0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  margin-top: 100px;
+  padding-left: 10px; }
+
+.button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px; }
+
+.button.green {
+  background: #3BB662; }
+
+.button.yellow {
+  background: #E5C30F; }
+
+.button.red {
+  background: #E75448; }
+
+.terminal {
+  background: #30353A;
+  bottom: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  overflow: auto;
+  padding: 10px;
+  position: absolute;
+  top: 30px;
+  width: 100%; }
+
+span.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 1.5s infinite;
+  -moz-animation: blink 1.5s infinite;
+  animation: blink 1.5s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.terminal-data {
+  display: none; }
+
+.terminal-window .gray {
+  color: gray; }
+
+.terminal-window .green {
+  color: green; }
+
+.inactive {
+  position: absolute;
+  margin-left: 110%; }
