@@ -32,6 +32,13 @@ $(document).ready(function(){
         $("#terminal").addClass("inactive");
     });
 
+    $("h1").click(function(){
+        $("#terminal").toggleClass("inactive");
+        $("#t-bio").addClass("inactive");
+        $("#t-socials").addClass("inactive");
+        $("#t-projects").addClass("inactive");
+    })
+
     // Data to feed the terminal
     let data = [
       { 
@@ -41,7 +48,7 @@ $(document).ready(function(){
       },
       { 
         action: 'typeit',
-        strings: ['name="Dave"'], 
+        strings: ['name="Dave"; '], 
         output: ' ',
         postDelay: 2000
       },
@@ -59,9 +66,10 @@ $(document).ready(function(){
     }]
 
     // This uses Matt Bolt's typed.js to put the text on the terminal
+    // Thanks to Simo Ami: https://codepen.io/simoami/pen/zstvo
     $(function(){
-        runScripts(data, 0);
-		function runScripts(data, pos) {
+        startTyping(data, 0);
+		function startTyping(data, pos) {
 			var prompt = $('.prompt'),
 				script = data[pos];
 			switch(script.action) {
@@ -79,15 +87,15 @@ $(document).ready(function(){
 					  if(script.output) {
 						history.push(script.output);
 						prompt.html('');
-						$('.history').html(history.join('<br>'));
+						$('.history').html(history.join('<br/>'));
 					  }
 					  // scroll to bottom of screen
 					  $('section.terminal').scrollTop($('section.terminal').height());
-					  // Run next script
+					  // Type next string...
 					  pos++;
 					  if(pos < data.length) {
 						setTimeout(function() {
-						  runScripts(data, pos);
+						  startTyping(data, pos);
 						}, script.postDelay || 1000);
 					  }
 					}
