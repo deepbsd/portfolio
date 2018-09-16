@@ -48,8 +48,8 @@ $(document).ready(function(){
       },
       { 
         action: 'typeit',
-        strings: ['name="Dave"; '], 
-        output: ' ',
+        strings: ['name="Dave" '], 
+        output: '\n',
         postDelay: 2000
       },
       {

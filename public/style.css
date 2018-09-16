@@ -389,11 +389,11 @@ p {
 
 @keyframes roll {
   0% {
-    -webkit-transform: rotate(0deg) translateY(20px);
-    transform: rotate(0deg) translateY(20px); }
+    -webkit-transform: rotate(0deg) translateY(0px);
+    transform: rotate(0deg) translateY(0px); }
   100% {
-    -webkit-transform: rotate(360deg) translateY(-30px);
-    transform: rotate(360deg) translateY(-30px); } }
+    -webkit-transform: rotate(360deg) translateY(0px);
+    transform: rotate(360deg) translateY(0px); } }
 
 .stack {
   font-size: 18px;
