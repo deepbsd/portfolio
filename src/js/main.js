@@ -60,8 +60,8 @@ $(document).ready(function(){
       },
       {
         action: 'typeit',
-        strings: ['echo "What\'s new?"'],
-        output: "Not much, how about you?",
+        strings: ['echo "What\'s new, ${name}?"'],
+        output: "Not much, Dave, how about you?",
         postDelay: 2000
     }]
 
