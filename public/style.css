@@ -307,6 +307,7 @@ p {
 /*  Output Styles   */
 .home h1 {
   color: slategray;
+  display: inline-block;
   font-size: 65px;
   line-height: 5.5rem;
   margin-top: 100px;
@@ -350,19 +351,31 @@ p {
   line-height: 2.5rem;
   text-align: center; }
 
-.pseudonav li:hover {
+.pseudonav a {
+  display: inline-block; }
+
+.pseudonav a:hover {
   cursor: pointer;
   transform: scale(1.3);
   transition: all 0.3s; }
 
-.bio, .projects, .socials {
-  left: 20%;
+.frame {
+  left: 50%;
   margin-bottom: 100px;
   margin-top: 170px;
-  padding-right: 8%;
+  max-width: 800px;
+  overflow: hidden;
   position: absolute;
   top: 35%;
-  transition: all 1200ms ease-in-out; }
+  transform: translateX(-50%);
+  transition: all 1200ms ease-in-out;
+  width: 90%; }
+
+.socials {
+  text-align: center; }
+
+.socials h2 {
+  text-align: left; }
 
 .inactive {
   margin-left: 110%; }

@@ -20,32 +20,37 @@
       </div>
 
       <ul class="pseudonav">
-           <li id="bio">bio</li>
-           <li id="projects">projects</li>
-           <li id="contact">contact</li>
+          <li id="bio"><a href="#">bio</a></li>
+          <li id="projects"><a href="#">projects</a></li>
+          <li id="contact"><a href="#">contact</a></li>
       </ul>
   </div>
 
   
-  <div id="t-bio" class="bio inactive">
-   <h2>Bio</h2>
+  <div id="t-bio" class="frame inactive">
 
-   <img id="selfie" src="/img/dave_cropped.jpg"  />
+   <div class="bio">
 
-   <p>Dave started out in life as a child a very long time ago.  The world was in black and white.</p>
+       <h2>Bio</h2>
 
-   <p>In 1996 Dave first installed Linux, and he's had a love affair with code ever since.  That was the same 
-   year he published a book with MacMillan, called <cite>Special Edition: Using SGML</cite> with his friend 
-   Martin Colby.  Dave retired from his job as a technical writer not long after, because his wife was making 
-   too darn much money and someone needed to raise their wonderful child, so Dave became a full-time parent for his 
-   daughter.  His wife died from cancer.  Dave and his daughter eventually recovered, and now that Ginny is a grown 
-   adult who has surpassed her dad in maturity, Dave is returning to the workforce doing what he loves, namely, 
-   wrangling code.</p>
+       <img id="selfie" src="/img/dave_cropped.jpg"  />
 
-  </div>
+       <p>Dave started out in life as a child a very long time ago.  The world was in black and white.</p>
+
+       <p>In 1996 Dave first installed Linux, and he's had a love affair with code ever since.  That was the same 
+       year he published a book with MacMillan, called <cite>Special Edition: Using SGML</cite> with his friend 
+       Martin Colby.  Dave retired from his job as a technical writer not long after, because his wife was making 
+       too darn much money and someone needed to raise their wonderful child, so Dave became a full-time parent for his 
+       daughter.  His wife died from cancer.  Dave and his daughter eventually recovered, and now that Ginny is a grown 
+       adult who has surpassed her dad in maturity, Dave is returning to the workforce doing what he loves, namely, 
+       wrangling code.</p>
+  </div>  <!-- end bio -->
+
+  </div>   <!-- end frame -->
 
 
-  <div id="t-projects" class="projects inactive">
+  <div id="t-projects" class="frame inactive">
+   <div class="projects">
 	 <h2>Projects</h2>
   
 	 <div class="project">
@@ -88,10 +93,12 @@
       <p class="stack">MongoDB, Express.js, Node.js, jQuery, Chai.js, Jest and Heroku. </p>
 	  <p class="link">(<a href="https://swapiquiz.herokuapp.com/">Live App</a> | <a href="https://github.com/deepbsd/swapiQuiz">Repo</a>)</p>
 	 </div>
+  </div> <!-- end projects -->
 
-  </div>  <!-- End Projects -->
+  </div>  <!-- End Frame -->
 
-  <div id="t-socials" class="socials inactive">
+  <div id="t-socials" class="frame inactive">
+    <div class="socials">
 
       <h2>My Socials</h2>
   
@@ -102,7 +109,8 @@
      <div class="social"><a href="https://www.flickr.com/photos/deepbsd" title="dave's flickr"><i class="fab fa-flickr fa-3x"></i></a></div>
      <div class="social"><a href="https://deepbsd.github.io" title="dave's github blog"><i class="fab fa-github-alt fa-3x"></i>blog</a></div>
      <div class="social"><a href="http://www.davidsjackson.net" title="dave's wordpress blog"><i class="fab fa-wordpress fa-3x"></i>blog</a></div>
-  </div>   <!-- End Socials  -->
+    </div>  <!-- socials  -->
+  </div>   <!-- End Frame  -->
 
 
 
