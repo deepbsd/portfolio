@@ -9,7 +9,7 @@ $(document).ready(function(){
     $("#terminal").hide();
     $("h1").slideDown(3000);
     $(".pseudonav").fadeIn(4000);
-    $("#terminal").slideToggle(500);
+    $("#terminal").fadeIn(2000);
 
     $( "li#bio" ).click(function() {
         $("#t-bio").toggleClass("inactive");
@@ -72,14 +72,15 @@ $(document).ready(function(){
 		function startTyping(data, pos) {
 			var prompt = $('.prompt'),
 				script = data[pos];
-			switch(script.action) {
-				default:
+			switch(pos < data.length) {
+				 default :
 				  // cleanup
 				  prompt.removeData();
 				  $('.typed-cursor').text('');
 				  prompt.typed({
 					strings: script.strings,
 					typeSpeed: 35,
+                    
 					callback: function() {
 					  var history = $('.history').html();
 					  history = history ? [history] : [];
@@ -100,7 +101,7 @@ $(document).ready(function(){
 					  }
 					}
 				  });
-				  break;
+		         break;
 		  }  // end of switch
 	   }     // end of runScripts()
    });       // end of IIFE
