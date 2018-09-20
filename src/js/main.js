@@ -65,10 +65,39 @@ $(document).ready(function(){
         postDelay: 2000
     }]
 
+    let data1 = [
+    {
+        action: 'typeit',
+        strings: ["fortune"],
+        output: "<pre>UNIX was not designed to stop you from doing stupid things <br />because that would also stop you from doing clever things.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Douglas Gwyn</pre>",
+        postDelay: 2000
+    },
+    {
+        action: 'typeit',
+        strings: ["^2000 fortune"],
+        output: "<pre>UNIX is simple.  It just takes a genius to understand its simplicity.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Dennis Ritchie</pre>",
+        postDelay: 2000
+    },
+    {
+        action: 'typeit',
+        strings: ["^2000 fortune"],
+        output: "<pre>I define UNIX as 30 definitions of regular expressions living under one root.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Donald Knuth</pre>",
+        postDelay: 2000
+    },
+    {
+        action: 'typeit',
+        strings: ["^2000 fortune"],
+        output: "<pre>UNIX gives you just enough rope to hang yourself--and then a couple more feet, just to be sure.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Eric Allman</pre>",
+        postDelay: 2000
+    }
+    ]
+
     // This uses Matt Bolt's typed.js to put the text on the terminal
     // Thanks to Simo Ami: https://codepen.io/simoami/pen/zstvo
     $(function(){
-        startTyping(data, 0);
+        let choice;
+        choice = Math.round(Math.random()) ? data1 : data ;
+        startTyping(choice, 0);
 		function startTyping(data, pos) {
 			var prompt = $('.prompt'),
 				script = data[pos];
@@ -80,7 +109,6 @@ $(document).ready(function(){
 				  prompt.typed({
 					strings: script.strings,
 					typeSpeed: 35,
-                    
 					callback: function() {
 					  var history = $('.history').html();
 					  history = history ? [history] : [];
@@ -99,9 +127,18 @@ $(document).ready(function(){
 						  startTyping(data, pos);
 						}, script.postDelay || 1000);
 					  }
+                      else {
+                         setTimeout(function(){
+                           $('.history').html('');
+                         }, 6000);
+                         setTimeout(function(){
+                            choice = Math.round(Math.random()) ? data1 : data ;
+                            startTyping(choice, 0);
+                         }, 6000);
+                      }
 					}
-				  });
-		         break;
+				    });
+		           break;
 		  }  // end of switch
 	   }     // end of runScripts()
    });       // end of IIFE
