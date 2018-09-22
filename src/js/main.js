@@ -136,8 +136,6 @@ $(document).ready(function(){
                       else {
                          setTimeout(function(){
                            $('.history').html('');
-                         }, 6000);
-                         setTimeout(function(){
                             choice = Math.round(Math.random()) ? data1 : data ;
                             startTyping(choice, 0);
                          }, 6000);
