@@ -74,6 +74,18 @@ $(document).ready(function(){
     },
     {
         action: 'typeit',
+        strings: ["fortune"],
+        output: "<pre>I came of technical age with UNIX, where I learned with power-greedy pleasure that you could kill a system right out from under yourself with a single command.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Ellen Ullman</pre>",
+        postDelay: 2000
+    }, 
+    {
+        action: 'typeit',
+        strings: ["fortune"],
+        output: "<pre>If you have any trouble sounding condescending, find a Unix user to show you how it's done.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Scott Adams</pre>",
+        postDelay: 2000
+    }, 
+    {
+        action: 'typeit',
         strings: ["^2000 fortune"],
         output: "<pre>UNIX is simple.  It just takes a genius to understand its simplicity.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Dennis Ritchie</pre>",
         postDelay: 2000
@@ -93,7 +105,7 @@ $(document).ready(function(){
     {
         action: 'typeit',
         strings: ["^2000 fortune"],
-        output: "<pre>I must say the Linux community is a lot nicer than the Unix community. A negative comment on Unix would warrent death threats. With Linux, <br/>it is like stirring up a nest of butterflies.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Ken Thompson</pre>",
+        output: "<pre>I must say the Linux community is a lot nicer than the Unix community. A negative comment on Unix would warrent death threats. With Linux, it is like stirring up a nest of butterflies.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Ken Thompson</pre>",
         postDelay: 2000
     }
     ]
