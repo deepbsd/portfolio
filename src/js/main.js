@@ -106,7 +106,7 @@ $(document).ready(function(){
         action: 'typeit',
         strings: ["^2000 fortune"],
         output: "<pre>I must say the Linux community is a lot nicer than the Unix community. A negative comment on Unix would warrent death threats. With Linux, it is like stirring up a nest of butterflies.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Ken Thompson</pre>",
-        postDelay: 2000
+        postDelay: 4000
     }
     ]
 
