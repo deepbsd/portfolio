@@ -452,10 +452,17 @@ i:hover {
 
 .termheader {
   background: #E0E8F0;
-  height: 30px;
   border-radius: 8px 8px 0 0;
+  height: 30px;
   margin-top: 100px;
   padding-left: 10px; }
+
+.termtitle {
+  display: inline-block;
+  font-size: 14px;
+  font-family: Monaco, sans-serif;
+  margin-left: 30%;
+  text-align: center; }
 
 .button {
   width: 12px;
