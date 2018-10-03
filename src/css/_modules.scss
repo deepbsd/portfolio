@@ -30,6 +30,9 @@ h1 {
             animation-fill-mode: none;
             transform-origin: 0 0;
         }
+        &:hover {
+            cursor: pointer;
+        }
 
     }
 }

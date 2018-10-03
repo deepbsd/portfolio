@@ -327,6 +327,8 @@ p {
     animation-duration: 1.25s;
     animation-fill-mode: none;
     transform-origin: 0 0; }
+  .home h1:hover {
+    cursor: pointer; }
 
 @keyframes twitch {
   0% {

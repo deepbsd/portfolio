@@ -60,7 +60,7 @@ $(document).ready(function(){
       },
       {
         action: 'typeit',
-        strings: ['echo "What\'s new, ${name}?"'],
+        strings: ['[ -z "${name}" ] ||  echo "What\'s new, ${name}?"'],
         output: "Not much, Dave, how about you?",
         postDelay: 2000
     }]
