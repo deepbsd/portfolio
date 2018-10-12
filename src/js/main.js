@@ -12,10 +12,11 @@ $(document).ready(function(){
     $("#terminal").fadeIn(2000);
 
     $( "li#bio" ).click(function() {
-        $("#t-bio").toggleClass("inactive");
-        $("#t-projects").addClass("inactive");
-        $("#t-socials").addClass("inactive");
-        $("#terminal").addClass("inactive");
+      addBio();
+        // $("#t-bio").toggleClass("inactive");
+        // $("#t-projects").addClass("inactive");
+        // $("#t-socials").addClass("inactive");
+        // $("#terminal").addClass("inactive");
     });
 
     $( "li#projects" ).click(function() {
@@ -24,7 +25,7 @@ $(document).ready(function(){
         $("#t-socials").addClass("inactive");
         $("#terminal").addClass("inactive");
     });
-    
+
     $( "li#contact" ).click(function() {
         $("#t-socials").toggleClass("inactive");
         $("#t-bio").addClass("inactive");
@@ -39,16 +40,38 @@ $(document).ready(function(){
         $("#t-projects").addClass("inactive");
     })
 
+
+    function addBio() {
+      let target = $('#frame');
+      target.html(`
+        <div id="t-bio" class="frame">
+         <div class="bio">
+             <h2>Bio</h2>
+             <img id="selfie" src="/img/dave_cropped.jpg"  />
+             <p>Dave started out in life as a child a very long time ago.  The world was in black and white.</p>
+             <p>In 1996 Dave first installed Linux, and he's had a love affair with code ever since.  That was the same
+             year he published a book with MacMillan, called <cite>Special Edition: Using SGML</cite> with his friend
+             Martin Colby.  Dave retired from his job as a technical writer not long after, because his wife was making
+             too darn much money and someone needed to raise their wonderful child, so Dave became a full-time parent for his
+             daughter.  His wife died from cancer.  Dave and his daughter eventually recovered, and now that Ginny is a grown
+             adult who has surpassed her dad in maturity, Dave is returning to the workforce doing what he loves, namely,
+             wrangling code.</p>
+          </div>
+        </div>
+        `)
+    }
+
+
     // Data to feed the terminal
     let data = [
-      { 
+      {
         action: 'typeit',
-        strings: ['^2000 bash --version\n'], 
+        strings: ['^2000 bash --version\n'],
         output: '<pre>GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)<br /> Copyright (C) 2013 Free Software Foundation, Inc.<br /> License GPLv3+: GNU GPL version 3 or later http://gnu.org/licenses/gpl.html <br /> This is free software; you are free to change and redistribute it. <br /> There is NO WARRANTY, to the extent permitted by law.</pre>'
       },
-      { 
+      {
         action: 'typeit',
-        strings: ['name="Dave" '], 
+        strings: ['name="Dave" '],
         output: '\n',
         postDelay: 2000
       },
@@ -77,13 +100,13 @@ $(document).ready(function(){
         strings: ["fortune"],
         output: "<pre>I came of technical age with UNIX, where I learned with power-greedy pleasure that you could kill a system right out from under yourself with a single command.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Ellen Ullman</pre>",
         postDelay: 2000
-    }, 
+    },
     {
         action: 'typeit',
         strings: ["fortune"],
         output: "<pre>If you have any trouble sounding condescending, find a Unix user to show you how it's done.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Scott Adams</pre>",
         postDelay: 2000
-    }, 
+    },
     {
         action: 'typeit',
         strings: ["^2000 fortune"],
@@ -159,4 +182,3 @@ $(document).ready(function(){
 	   }     // end of runScripts()
    });       // end of IIFE
 });
-

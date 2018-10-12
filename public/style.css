@@ -246,15 +246,55 @@ html {
 /*----------------------------------------------------------------------------
   Transitions
 ----------------------------------------------------------------------------*/
+@keyframes twitch {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%); }
+  20% {
+    transform: rotate(-15deg) translate(-50%, -50%); }
+  40% {
+    transform: rotate(15deg) translate(-50%, -50%); }
+  60% {
+    transform: rotate(-15deg) translate(-50%, -50%); }
+  80% {
+    transform: rotate(15deg) translate(-50%, -50%); }
+  100% {
+    transform: rotate(0deg) translate(-50%, -50%); } }
+
 /*----------------------------------------------------------------------------
   Body
 ----------------------------------------------------------------------------*/
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding-bottom: 20px; }
 
 /*----------------------------------------------------------------------------
   Header Styles
 ----------------------------------------------------------------------------*/
+h1 {
+  color: slategray;
+  display: inline-block;
+  font-size: 65px;
+  line-height: 5.5rem;
+  margin-top: 10px;
+  position: relative; }
+  h1:after {
+    background: url("/img/MustachePro.png") no-repeat center center;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 80px;
+    width: 120px;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  h1:hover:after {
+    animation-name: twitch;
+    animation-duration: 1.25s;
+    animation-fill-mode: none;
+    transform-origin: 0 0; }
+  h1:hover {
+    cursor: pointer; }
+
 h2 {
   font-size: 26px;
   color: slategray;
@@ -305,45 +345,6 @@ p {
 ----------------------------------------------------------------------------*/
 /* Media Queries */
 /*  Output Styles   */
-.home h1 {
-  color: slategray;
-  display: inline-block;
-  font-size: 65px;
-  line-height: 5.5rem;
-  margin-top: 100px;
-  position: relative; }
-  .home h1:after {
-    background: url("/img/MustachePro.png") no-repeat center center;
-    background-size: contain;
-    content: "";
-    position: absolute;
-    left: 50%;
-    height: 80px;
-    width: 120px;
-    top: 50%;
-    transform: translate(-50%, -50%); }
-  .home h1:hover:after {
-    animation-name: twitch;
-    animation-duration: 1.25s;
-    animation-fill-mode: none;
-    transform-origin: 0 0; }
-  .home h1:hover {
-    cursor: pointer; }
-
-@keyframes twitch {
-  0% {
-    transform: rotate(0deg) translate(-50%, -50%); }
-  20% {
-    transform: rotate(-15deg) translate(-50%, -50%); }
-  40% {
-    transform: rotate(15deg) translate(-50%, -50%); }
-  60% {
-    transform: rotate(-15deg) translate(-50%, -50%); }
-  80% {
-    transform: rotate(15deg) translate(-50%, -50%); }
-  100% {
-    transform: rotate(0deg) translate(-50%, -50%); } }
-
 .logo {
   text-align: center; }
 
@@ -373,14 +374,14 @@ p {
   transition: all 1200ms ease-in-out;
   width: 90%; }
 
+.inactive {
+  margin-left: 110%; }
+
 .socials {
   text-align: center; }
 
 .socials h2 {
   text-align: left; }
-
-.inactive {
-  margin-left: 110%; }
 
 .screenshot {
   border: solid 2px slategray;
@@ -444,8 +445,8 @@ i:hover {
 .termwindow {
   border-radius: 8px;
   text-align: left;
-  width: 600px;
-  height: 460px;
+  width: 100%;
+  height: 260px;
   margin: auto;
   position: relative;
   transition: all 1200ms ease-in-out; }
@@ -454,15 +455,16 @@ i:hover {
   background: #E0E8F0;
   border-radius: 8px 8px 0 0;
   height: 30px;
-  margin-top: 100px;
+  margin-top: 10px;
   padding-left: 10px; }
 
 .termtitle {
   display: inline-block;
-  font-size: 14px;
+  font-size: 10px;
   font-family: Monaco, sans-serif;
-  margin-left: 20%;
-  text-align: center; }
+  margin-left: 10px;
+  text-align: center;
+  vertical-align: middle; }
 
 .button {
   width: 12px;

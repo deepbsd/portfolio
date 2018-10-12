@@ -35,11 +35,11 @@
     "chai": "^4.1.2",
     "chai-http": "^4.2.0",
     "faker": "^4.1.0",
-    "gulp": "^4.0.0",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-livereload": "^4.0.0",
     "gulp-nodemon": "^2.2.1",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^3.1.0",
     "mocha": "^5.2.0"
   }
 }
