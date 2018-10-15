@@ -12,24 +12,24 @@ $(document).ready(function(){
     $("#terminal").fadeIn(2000);
 
     $( "li#bio" ).click(function() {
-        $("#t-bio").toggleClass("inactive");
         $("#t-projects").addClass("inactive");
         $("#t-socials").addClass("inactive");
         $("#terminal").addClass("inactive");
+        $("#t-bio").toggleClass("inactive");
     });
 
     $( "li#projects" ).click(function() {
-        $("#t-projects").toggleClass("inactive");
         $("#t-bio").addClass("inactive");
         $("#t-socials").addClass("inactive");
         $("#terminal").addClass("inactive");
+        $("#t-projects").toggleClass("inactive");
     });
     
     $( "li#contact" ).click(function() {
-        $("#t-socials").toggleClass("inactive");
         $("#t-bio").addClass("inactive");
         $("#t-projects").addClass("inactive");
         $("#terminal").addClass("inactive");
+        $("#t-socials").toggleClass("inactive");
     });
 
     $("h1").click(function(){

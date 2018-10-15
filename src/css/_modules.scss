@@ -86,7 +86,6 @@ a:hover {
     position: absolute;
     top: 35%;
     transform: translateX(-50%);
-    transition: all 1200ms ease-in-out;
     width: 90%;
 }
 
@@ -100,10 +99,14 @@ h2 {
     }
 }
 
+.frame-content {
+  transition: all 800ms ease-in-out;
+}
+
 .inactive{
    max-height: 40%;
    margin-left: 110%;
-   transition: all 1200ms ease-out;
+   // transition: all 1200ms ease-out;
 }
 
 .screenshot {
