@@ -69,7 +69,7 @@ $(document).ready(function(){
     {
         action: 'typeit',
         strings: ["fortune"],
-        output: "<pre>UNIX was not designed to stop you from doing stupid things <br />because that would also stop you from doing clever things.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Douglas Gwyn</pre>",
+        output: "<pre>UNIX was not designed to stop you from doing stupid things because that would also stop you from doing clever things.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -- Douglas Gwyn</pre>",
         postDelay: 2000
     },
     {
