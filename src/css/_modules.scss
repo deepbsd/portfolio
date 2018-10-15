@@ -101,8 +101,9 @@ h2 {
 }
 
 .inactive{
-   //height: 0;
+   max-height: 40%;
    margin-left: 110%;
+   transition: all 1200ms ease-out;
 }
 
 .screenshot {
@@ -182,28 +183,30 @@ i:hover {
 
 .termwindow {
     border-radius: 8px;
-    text-align: left;
-    width: 600px;
-    height: 460px;
+    font-size: 11px;
+    height: 380px;
     margin: auto;
     position: relative;
+    text-align: left;
     transition: all 1200ms ease-in-out;
+    width: 100%;
 } 
 
 .termheader {
   background: #E0E8F0;
   border-radius: 8px 8px 0 0;
   height: 30px;
-  margin-top: 100px;
+  margin-top: 30px;
   padding-left: 10px;
 }
 
 .termtitle {
   display: inline-block;
-  font-size: 14px;
+  font-size: 10px;
   font-family: Monaco, sans-serif;
   margin-left: 20%;
   text-align: center;
+  vertical-align: middle;
 
 }
 
