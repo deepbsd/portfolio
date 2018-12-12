@@ -256,7 +256,7 @@ body {
   Header Styles
 ----------------------------------------------------------------------------*/
 h2 {
-  font-size: 26px;
+  font-size: 29px;
   color: slategray;
   margin: 10px auto; }
 
@@ -269,7 +269,8 @@ h3 {
   font-size: 26px;
   font-variant: small-caps;
   margin: 80px auto 40px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  padding: 4px; }
 
 /*----------------------------------------------------------------------------
   HTML
@@ -353,7 +354,8 @@ p {
   color: slategray;
   font-size: 25px;
   line-height: 2.5rem;
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
 
 .pseudonav a {
   display: inline-block; }
