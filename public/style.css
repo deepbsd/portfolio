@@ -372,7 +372,7 @@ p {
   max-width: 800px;
   overflow: hidden;
   position: absolute;
-  top: 35%;
+  top: 45%;
   transform: translateX(-50%);
   transition: all 1200ms ease-in-out;
   width: 90%; }
