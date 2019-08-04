@@ -451,7 +451,7 @@ i:hover {
   border-radius: 8px;
   font-size: 11px;
   height: 380px;
-  margin: auto;
+  margin: 100px auto;
   position: relative;
   text-align: left;
   transition: all 1200ms ease-in-out;
